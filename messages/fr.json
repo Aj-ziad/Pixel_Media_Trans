@@ -1,0 +1,207 @@
+{
+  "HomePage": {
+    "mainHeading": "Transformer votre présence en ligne en une <highlight>Vision</highlight>",
+    "subtext": "Nous concevons des sites web époustouflants et des stratégies digitales puissantes pour convertir vos visiteurs en clients fidèles et stimuler une croissance exponentielle.",
+    "btnConsult": "Obtenez une consultation gratuite",
+    "btnServices": "Voir nos services"
+  },
+  
+  "StatsSection": {
+    "impact": "Notre Impact",
+    "heading": "Des chiffres qui <highlight>parlent</highlight>",
+    "subtext": "Nous mesurons notre succès par la croissance que nous apportons à nos clients",
+    "stats": [
+      {
+        "number": "120+",
+        "label": "Clients satisfaits",
+        "description": "Entreprises transformées"
+      },
+      {
+        "number": "2M+",
+        "label": "Leads générés",
+        "description": "Pour nos clients"
+      },
+      {
+        "number": "4.9/5",
+        "label": "Évaluation des clients",
+        "description": "Satisfaction moyenne"
+      },
+      {
+        "number": "3+",
+        "label": "Années d’expérience",
+        "description": "Dans le marketing digital"
+      }
+    ]
+  },
+  
+  "ServicesList": {
+    "heading": "Nos <highlight>Services</highlight>",
+    "subtext": "De la conception web impressionnante aux stratégies digitales puissantes, nous proposons des solutions complètes pour faire grandir votre marque.",
+    "btnMoreDetails": "Plus de détails",
+    "btnShowAll": "Voir tous les services",
+    "btnHide": "Masquer les services",
+    "reviews": "{count} avis"
+  },
+   "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Obtenez des réponses aux questions les plus courantes sur nos services de marketing digital",
+    "items": [
+      {
+        "q": "Combien de temps faut-il pour voir les résultats du marketing digital ?",
+        "a": "Le délai varie selon le service : le SEO montre généralement des améliorations en 3 à 6 mois, les campagnes PPC peuvent générer des prospects en quelques jours et la croissance sur les réseaux sociaux devient visible en 4 à 8 semaines. Nous fournissons des rapports réguliers pour suivre les progrès."
+      },
+      {
+        "q": "Qu'est-ce qui différencie Pixel Media des autres agences ?",
+        "a": "Nous combinons des stratégies basées sur les données avec une exécution créative, offrons des rapports transparents, assurons une gestion de compte dédiée et nous concentrons sur des résultats axés sur le ROI. Notre équipe reste à jour avec les dernières tendances digitales et les mises à jour des plateformes."
+      },
+      {
+        "q": "Travaillez-vous avec des entreprises de toutes tailles ?",
+        "a": "Oui ! Nous travaillons avec des startups, des petites entreprises et des grandes entreprises. Nos stratégies sont adaptées au budget, aux objectifs et aux besoins de chaque client. Nous croyons que chaque entreprise mérite un marketing digital professionnel."
+      },
+      {
+        "q": "Qu'est-ce qui est inclus dans votre service de conception de sites web ?",
+        "a": "Notre conception de site web inclut un design personnalisé, une compatibilité mobile, une optimisation SEO, un système de gestion de contenu, une configuration de sécurité, une optimisation des performances et 3 mois de maintenance et support gratuits."
+      },
+      {
+        "q": "Comment mesurez-vous le succès d'une campagne ?",
+        "a": "Nous suivons des KPI spécifiques à vos objectifs : trafic du site web, taux de conversion, génération de prospects, ROI, notoriété de la marque et attribution des ventes. Les rapports mensuels incluent des recommandations et des pistes d’optimisation."
+      },
+      {
+        "q": "Pouvez-vous aider à la création de contenu pour les réseaux sociaux ?",
+        "a": "Absolument ! Nous créons du contenu visuel personnalisé, rédigeons des légendes engageantes, développons des calendriers éditoriaux, produisons des vidéos et des visuels, et gérons les publications sur toutes les plateformes principales, y compris Instagram, Facebook, TikTok et LinkedIn."
+      }
+    ]
+  },
+    "footer": {
+    "aboutTitle": "À propos de Pixel Media",
+    "aboutLinks": {
+      "aboutUs": "Qui sommes-nous",
+      "whatWeDo": "Ce que nous faisons",
+      "services": "Services",
+      "reviews": "Avis clients"
+    },
+    "followTitle": "Suivez-nous",
+    "termsTitle": "Conditions d’utilisation",
+    "termsLinks": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions générales",
+      "general": "Conditions générales d’utilisation"
+    },
+    "copyright": "© 2023-2025 Pixel Media™. Tous droits réservés."
+
+
+},
+
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Nous sommes fiers de partager leurs avis",
+    "reviews": [
+      {
+        "name": "Jean Dupont",
+        "role": "Propriétaire d'entreprise",
+        "comment": "Pixel Media a transformé ma présence en ligne !"
+      },
+      {
+        "name": "Sarah Martin",
+        "role": "Responsable marketing",
+        "comment": "L'équipe est très professionnelle et respecte toujours les délais."
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "sectionTag": "Témoignages",
+    "title": "Ce que disent nos clients",
+    "subtitle": "Ne nous croyez pas sur parole - écoutez les entreprises que nous avons aidées à grandir",
+    "at": "chez",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "company": "Startup Tech",
+        "role": "PDG",
+        "content": "Pixel Media a transformé notre présence en ligne grâce à leur service de conception de sites web et d'applications. Notre trafic a augmenté de 300 % et notre taux de conversion a doublé en 3 mois.",
+        "rating": 5,
+        "image": "https://thisrareearth.com/wp-content/uploads/2022/10/100-Hiking-Captions-and-Quotes-for-Instagram-10.jpg"
+      },
+      {
+        "name": "Ahmed El Mansouri",
+        "company": "Boutique E-commerce",
+        "role": "Fondateur",
+        "content": "Leur stratégie de gestion des réseaux sociaux a énormément augmenté notre notoriété. Nous sommes passés de 500 à 50K abonnés en seulement 6 mois !",
+        "rating": 5,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_iqS-wAK2-VxyP4SmBTeDD14CuGuAqjJntg&s"
+      },
+      {
+        "name": "Aisha Rochdi",
+        "company": "Marque de Beauté",
+        "role": "Directrice Marketing",
+        "content": "Le service de création et de stratégie de contenu est exceptionnel. Chaque contenu produit génère de l'engagement et convertit les spectateurs en clients.",
+        "rating": 5,
+        "image": "https://media.istockphoto.com/id/923459510/photo/woman-in-a-burka-burqa-walking-over-a-middle-eastern-desert-during-sunset.jpg?s=612x612&w=0&k=20&c=lJd4vHckcq0f_pHewir5lafbrLks1qaLTFGgG04HLBg="
+      }
+    ]
+  },
+   "gallery": {
+    "sectionTag": "Galerie",
+    "title": "Notre Galerie",
+    "subtitle": "Capturez la magie de Pixel Media",
+    "imageAlt": "Image de la galerie"
+  },
+  
+  "contact": {
+    "sectionTag": "Contactez-nous",
+    "title": "Découvrez l'hospitalité de Pixel Media",
+    "subtitle": "Discutons ensemble de la manière dont nous pouvons vous aider à atteindre vos objectifs numériques. Contactez-nous pour une consultation gratuite.",
+    "connectTitle": "Restons Connectés",
+    "connectDescription": "Échangez avec nos spécialistes du digital pour explorer des stratégies sur mesure, concevoir des expériences uniques et discuter de solutions innovantes pour propulser votre marque.",
+    "email": { "label": "Email", "value": "pixelmedia.agence@gmail.com" },
+    "phone": { "label": "Atelier", "value": "+212 (06)69 90 91 79" },
+    "location": { "label": "Localisation", "value": "Maroc, Agadir" },
+    "followUs": "Suivez-nous",
+    "form": {
+      "title": "Envoyer un message",
+      "name": "Votre nom",
+      "email": "Adresse email",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "send": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise ?",
+      "description": "Pour plus d’informations sur nos services Pixel Media, veuillez remplir notre formulaire de contact."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Votre Vision, Notre Création",
+      "subtitle": "Pixel Media transforme les idées en expériences numériques percutantes"
+    },
+    "who": {
+      "title": "Qui Sommes-Nous",
+      "subtitle": "Pixel Media est votre partenaire créatif dans le monde numérique.",
+      "text": "Nous sommes spécialisés dans la création d’identités en ligne puissantes qui connectent avec votre audience. Du branding et design à la stratégie et au développement, nous proposons des solutions qui inspirent, engagent et génèrent de réels résultats."
+    },
+    "why": {
+      "title": "Pourquoi Choisir Pixel Media ?",
+      "subtitle": "Nous allions créativité et stratégie pour aider les marques à prospérer en ligne.",
+      "text": "Chez Pixel Media, nous ne faisons pas que du design — nous créons des expériences. Notre mission est de transformer votre vision en visuels époustouflants et en histoires impactantes. Que ce soit pour un site web, les réseaux sociaux ou des campagnes digitales, nous rapprochons votre marque des personnes qui comptent."
+    }
+  },
+  "navbar": {
+    "home": "Accueil",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "À propos",
+    "language": "Langue",
+    "english": "Anglais",
+    "french": "Français",
+    "arabic": "Arabe"
+  }
+
+
+
+
+
+}

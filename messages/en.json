@@ -1,0 +1,202 @@
+{
+  "HomePage": {
+    "mainHeading": "Transforming Your Online <highlight>Vision</highlight>",
+    "subtext": "We design stunning websites and powerful digital strategies to convert your visitors into loyal customers and drive exponential growth.",
+    "btnConsult": "Get a Free Consultation",
+    "btnServices": "View Our Services"
+  },
+  "StatsSection": {
+    "impact": "Our Impact",
+    "heading": "Numbers That <highlight>Speak</highlight>",
+    "subtext": "We measure our success by the growth we deliver to our clients",
+    "stats": [
+      {
+        "number": "120+",
+        "label": "Happy Clients",
+        "description": "Businesses transformed"
+      },
+      {
+        "number": "2M+",
+        "label": "Leads Generated",
+        "description": "For our clients"
+      },
+      {
+        "number": "4.9/5",
+        "label": "Client Rating",
+        "description": "Average satisfaction"
+      },
+      {
+        "number": "3+",
+        "label": "Years Experience",
+        "description": "In digital marketing"
+      }
+    ]
+  },
+   "ServicesList": {
+    "heading": "Our <highlight>Services</highlight>",
+    "subtext": "From stunning web design to powerful digital strategies, we provide comprehensive solutions to elevate your brand.",
+    "btnMoreDetails": "More Details",
+    "btnShowAll": "Show All Services",
+    "btnHide": "Hide Services",
+    "reviews": "{count} reviews"
+  },
+    "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to the most common questions about our digital marketing services",
+    "items": [
+      {
+        "q": "How long does it take to see results from digital marketing?",
+        "a": "Results timeline varies by service: SEO typically shows improvements in 3-6 months, PPC campaigns can generate leads within days, and social media growth usually becomes noticeable within 4-8 weeks. We provide regular reports to track progress."
+      },
+      {
+        "q": "What makes Pixel Media different from other agencies?",
+        "a": "We combine data-driven strategies with creative execution, offer transparent reporting, maintain dedicated account management, and focus on ROI-driven results. Our team stays current with latest digital trends and platform updates."
+      },
+      {
+        "q": "Do you work with businesses of all sizes?",
+        "a": "Yes! We work with startups, small businesses, and enterprise companies. Our strategies are tailored to each client's budget, goals, and industry requirements. We believe every business deserves professional digital marketing."
+      },
+      {
+        "q": "What's included in your website design service?",
+        "a": "Our website design includes custom design, mobile responsiveness, SEO optimization, content management system, security setup, performance optimization, and 3 months of free maintenance and support."
+      },
+      {
+        "q": "How do you measure campaign success?",
+        "a": "We track KPIs specific to your goals: website traffic, conversion rates, lead generation, ROI, brand awareness metrics, and sales attribution. Monthly reports include actionable insights and recommendations for optimization."
+      },
+      {
+        "q": "Can you help with social media content creation?",
+        "a": "Absolutely! We create custom visual content, write engaging captions, develop content calendars, produce videos and graphics, and manage posting schedules across all major platforms including Instagram, Facebook, TikTok, and LinkedIn."
+      }
+    ]
+  },
+
+  "footer": {
+    "aboutTitle": "About Pixel Media",
+    "aboutLinks": {
+      "aboutUs": "About us",
+      "whatWeDo": "What we do",
+      "services": "Services",
+      "reviews": "Clients Reviews"
+    },
+    "followTitle": "Follow us",
+    "termsTitle": "Terms of use",
+    "termsLinks": {
+      "privacy": "Privacy policy",
+      "terms": "Terms & Conditions",
+      "general": "General terms of use"
+    },
+    "copyright": "© 2023-2025 Pixel Media™. All Rights Reserved."
+  
+},
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "We are proud to share their feedback",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "role": "Business Owner",
+        "comment": "Pixel Media transformed my online presence!"
+      },
+      {
+        "name": "Sarah Smith",
+        "role": "Marketing Manager",
+        "comment": "The team is very professional and delivers on time."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it - hear from businesses we've helped grow",
+    "at": "at",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "company": "Tech Startup",
+        "role": "CEO",
+        "content": "Pixel Media transformed our online presence with their Website & App Design service. Our website traffic increased by 300% and our conversion rate doubled within 3 months.",
+        "rating": 5,
+        "image": "https://thisrareearth.com/wp-content/uploads/2022/10/100-Hiking-Captions-and-Quotes-for-Instagram-10.jpg"
+      },
+      {
+        "name": "Ahmed El Mansouri",
+        "company": "E-commerce Store",
+        "role": "Founder",
+        "content": "Their Social Media Management strategy boosted our brand awareness tremendously. We went from 500 to 50K followers in just 6 months!",
+        "rating": 5,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_iqS-wAK2-VxyP4SmBTeDD14CuGuAqjJntg&s"
+      },
+      {
+        "name": "Aisha Rochdi",
+        "company": "Beauty Brand",
+        "role": "Marketing Director",
+        "content": "The Content Creation & Strategy service is exceptional. Every piece of content they produce drives engagement and converts viewers into customers.",
+        "rating": 5,
+        "image": "https://media.istockphoto.com/id/923459510/photo/woman-in-a-burka-burqa-walking-over-a-middle-eastern-desert-during-sunset.jpg?s=612x612&w=0&k=20&c=lJd4vHckcq0f_pHewir5lafbrLks1qaLTFGgG04HLBg="
+      }
+    ]
+  },
+  "gallery": {
+    "sectionTag": "Gallery",
+    "title": "Our Gallery",
+    "subtitle": "Capture the magic of Pixel Media",
+    "imageAlt": "Gallery image"
+  },
+  
+  "contact": {
+    "sectionTag": "Get In Touch",
+    "title": "Experience Pixel Media Hospitality",
+    "subtitle": "Let's discuss how we can help you achieve your digital goals. Get in touch for a free consultation.",
+    "connectTitle": "Let's Connect",
+    "connectDescription": "Connect with our digital specialists to explore tailored strategies, design bespoke experiences, and discuss innovative solutions to elevate your brand in today’s competitive market.",
+    "email": { "label": "Email", "value": "pixelmedia.agence@gmail.com" },
+    "phone": { "label": "Workshop", "value": "+212 (06)69 90 91 79" },
+    "location": { "label": "Location", "value": "Morocco, Agadir" },
+    "followUs": "Follow Us",
+    "form": {
+      "title": "Send a Message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Business?",
+      "description": "For detailed information about our Pixel Media services, please complete our contact form."
+    }
+  },
+   "about": {
+    "hero": {
+      "title": "Your Vision, Our Creation",
+      "subtitle": "Pixel Media turns ideas into impactful digital experiences"
+    },
+    "who": {
+      "title": "Who We Are",
+      "subtitle": "Pixel Media is your creative partner in the digital world.",
+      "text": "We specialize in building powerful online identities that connect with your audience. From branding and design to strategy and development, we create solutions that inspire, engage, and deliver real results."
+    },
+    "why": {
+      "title": "Why Choose Pixel Media?",
+      "subtitle": "We blend creativity with strategy to help brands thrive online.",
+      "text": "At Pixel Media, we don’t just design—we craft experiences. Our mission is to transform your vision into stunning visuals and impactful stories. Whether it’s web design, social media, or digital campaigns, we bring your brand closer to the people that matter."
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About",
+    "language": "Lang",
+    "english": "English",
+    "french": "Français",
+    "arabic": "Arabic"
+  }
+
+
+
+
+}
