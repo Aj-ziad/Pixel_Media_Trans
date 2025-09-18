@@ -5,11 +5,11 @@ import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
-import { notFound } from "next/navigation";  // ✅ FIXED
+import { notFound } from "next/navigation";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans", // optional if you want to use CSS var
+  variable: "--font-sans",
   weight: ["400", "700"],
 });
 
@@ -19,14 +19,19 @@ export const metadata = {
 };
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = params; // no need `await` here ✅
+  // Fix: await params in Next.js 15
+  const { locale } = await params;
+  
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
   return (
     <html lang={locale}>
-      <body className={`${inter.className} antialiased`}>
+      <body 
+        className={`${inter.className} antialiased`}
+        suppressHydrationWarning={true}
+      >
         <NextIntlClientProvider locale={locale}>
           <MenuBar />
           <NextTopLoader color="#ffb900" />

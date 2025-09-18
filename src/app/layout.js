@@ -1,10 +1,3 @@
-export default function Layout({ children }) {
-   
-   return (
-     <html>
-       <body>
-         {children}
-       </body>
-     </html>
-   )
-  }
+export default function RootLayout({ children }) {
+  return children;
+}

@@ -1,11 +1,11 @@
 import { getGallery } from "@/app/[locale]/utils/api";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 import "@fontsource/inter/400.css"; // Regular
 import "@fontsource/inter/600.css"; // Semi-bold
 
 const Gallery = async () => {
-  const t = useTranslations("gallery");
+  const t = await getTranslations("gallery");
   const galleryData = await getGallery();
 
   return (

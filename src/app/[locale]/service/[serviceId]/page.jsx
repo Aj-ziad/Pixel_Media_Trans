@@ -15,7 +15,8 @@ export async function generateStaticParams() {
 }
 
 export default async function ServiceDetails({ params }) {
-  const { serviceId, locale } = params;
+  // Fix: await params in Next.js 15
+  const { serviceId, locale } = await params;
 
   const services = await getServices();
   const service = services.find((s) => s.id.toString() === serviceId);

@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from "next-intl";
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
