@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation'; // Use next-intl Link instead of next/link
 import React, { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import '@fontsource/inter/400.css';
@@ -9,7 +9,7 @@ import '@fontsource/inter/600.css';
 const ServicesList = ({ services }) => {
   const [showAll, setShowAll] = useState(false);
   const t = useTranslations("ServicesList");
-  const locale =useLocale();
+  const locale = useLocale();
 
   // Decide which services to display
   const displayedServices = showAll ? services : services.slice(0, 3);
