@@ -7,7 +7,7 @@ import WhatsAppIcon from '@/components/WhatsAppIcon'
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { Poppins, Playfair_Display } from 'next/font/google'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['600', '700', '800'] })
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['600'], style: ['italic'] })

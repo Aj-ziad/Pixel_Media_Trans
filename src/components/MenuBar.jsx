@@ -1,7 +1,6 @@
 'use client'
 import { navLinks } from '@/constants/nav-links'
-import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import React from 'react'
 import MobileNav from './MobileNav'
 import { useTranslations } from 'next-intl'
@@ -19,8 +18,7 @@ const MenuBar = () => {
   const t = useTranslations('navbar') // translation namespace
 
   function handleLocaleChange(newLocale) {
-    const newPathname = pathname.replace(/^\/(en|fr|ar)/, `/${newLocale}`)
-    router.push(newPathname)
+    router.push(pathname, { locale: newLocale })
   }
 
   return (

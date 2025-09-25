@@ -2,16 +2,21 @@
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { getServices } from '@/app/[locale]/utils/api';
 import { ArrowBigRight } from 'lucide-react';
 import ServiceImages from '@/components/ServiceImages';
 
 export async function generateStaticParams() {
+  // Pre-render service detail pages for all locales
   const services = await getServices();
-  return services.map((service) => ({
-    serviceId: service.id.toString(),
-  }));
+  const { routing } = await import('@/i18n/routing');
+  return routing.locales.flatMap((locale) =>
+    services.map((service) => ({
+      locale,
+      serviceId: service.id.toString(),
+    }))
+  );
 }
 
 export default async function ServiceDetails({ params }) {

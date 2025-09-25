@@ -1,7 +1,7 @@
 'use client';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';

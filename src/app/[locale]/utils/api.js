@@ -1,7 +1,8 @@
 //src/app/[locale]/utils/api.js
 export const getGallery = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_GALLERY_URL}`);
+    const url = process.env.NEXT_PUBLIC_GALLERY_URL || 'https://aj-ziad.github.io/gallery-api/gallery.json';
+    const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
@@ -15,12 +16,7 @@ export const getGallery = async () => {
 
 export const getServices = async () => {
   try {
-    const url = process.env.NEXT_PUBLIC_SERVICES_URL;
-
-    if (!url) {
-      throw new Error("NEXT_PUBLIC_SERVICES_URL is not defined in .env");
-    }
-
+    const url = process.env.NEXT_PUBLIC_SERVICES_URL || 'https://aj-ziad.github.io/services-api/services.json';
     const res = await fetch(url, {
       // Force Next.js to always fetch fresh data instead of caching
       cache: "no-store",

@@ -2,7 +2,7 @@
 
 import { navLinks } from '@/constants/nav-links'
 import { Menu, X, Languages } from 'lucide-react'
-import Link from 'next/link'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import {
@@ -11,7 +11,6 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu'
-import { usePathname, useRouter } from 'next/navigation'
 
 function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,9 +21,8 @@ function MobileNav() {
   const router = useRouter()
 
   function handleLocaleChange(newLocale) {
-    const newPathname = pathname.replace(/^\/(en|fr|ar)/, `/${newLocale}`)
-    router.push(newPathname)
-    setIsOpen(false) // close menu after selecting language
+    router.push(pathname, { locale: newLocale })
+    setIsOpen(false)
   }
 
   return (

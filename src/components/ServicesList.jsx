@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from '@/i18n/navigation'; // Use next-intl Link instead of next/link
+import { Link } from '@/i18n/navigation';
 import React, { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import '@fontsource/inter/400.css';
@@ -9,7 +9,7 @@ import '@fontsource/inter/600.css';
 const ServicesList = ({ services }) => {
   const [showAll, setShowAll] = useState(false);
   const t = useTranslations("ServicesList");
-  const locale = useLocale();
+  const locale =useLocale();
 
   // Decide which services to display
   const displayedServices = showAll ? services : services.slice(0, 3);
@@ -66,7 +66,7 @@ const ServicesList = ({ services }) => {
 
               {/* Buttons */}
               <div className="flex justify-between items-center flex-wrap gap-3">
-                <Link href={`/service/${service.id}`}>
+                <Link href={`/service/${service.id}`}> 
                   <button className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm bg-[#ffb900] text-white font-medium shadow hover:bg-orange-400 transition">
                     <svg
                       className="w-4 h-4 text-white"
