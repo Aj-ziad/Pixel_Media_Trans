@@ -17,7 +17,7 @@ const StatsSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center mb-16">
-          <span className="text-[#ffb900] font-semibold text-lg tracking-wide uppercase mb-4 block">
+          <span className="text-[#ffb900] font-semibold text-lg tracking-wide uppercase mb-4 mt-6 block">
             {t("impact")}
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-dark-foreground mb-6">

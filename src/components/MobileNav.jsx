@@ -59,23 +59,28 @@ function MobileNav() {
               </button>
             </DropdownMenuTrigger>
 
-            <DropdownMenuContent align="start" className="w-full">
+            <DropdownMenuContent align="start" className="w-full bg-white/90">
               <DropdownMenuItem
-                className="cursor-pointer py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
+                className="cursor-pointer flex items-center gap-2 py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
                 onSelect={() => handleLocaleChange('en')}
               >
+                <img src="/flags/en.png" alt="English" className="w-5 h-5 rounded-sm" />
                 {t('english')}
               </DropdownMenuItem>
+
               <DropdownMenuItem
-                className="cursor-pointer py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
+                className="cursor-pointer flex items-center gap-2 py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
                 onSelect={() => handleLocaleChange('fr')}
               >
+                <img src="/flags/fr.png" alt="Français" className="w-5 h-5 rounded-sm" />
                 {t('french')}
               </DropdownMenuItem>
+
               <DropdownMenuItem
-                className="cursor-pointer py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
+                className="cursor-pointer flex items-center gap-2 py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
                 onSelect={() => handleLocaleChange('ar')}
               >
+                <img src="/flags/ar.png" alt="العربية" className="w-5 h-5 rounded-sm" />
                 {t('arabic')}
               </DropdownMenuItem>
             </DropdownMenuContent>

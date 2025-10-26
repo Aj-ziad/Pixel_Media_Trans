@@ -79,7 +79,7 @@ export default async function page() {
 
 
     </div>
-    <div>
+    <div className='mt-16'>
       <StatsSection/>
     </div>
     <div className='relative bottom-15'>

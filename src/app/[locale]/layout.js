@@ -16,6 +16,9 @@ const inter = Inter({
 export const metadata = {
   title: "Pixel Media",
   description: "best services website",
+    icons: {
+    icon: '/lo.png',
+  },
 };
 
 export default async function LocaleLayout({ children, params }) {
