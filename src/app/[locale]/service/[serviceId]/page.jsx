@@ -1,4 +1,5 @@
 //src/app/[locale]/service/[serviceid]/page.jsx
+export const dynamic = 'force-dynamic';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
 import { notFound } from 'next/navigation';
