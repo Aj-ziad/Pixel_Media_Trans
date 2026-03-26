@@ -6,6 +6,8 @@ import NextTopLoader from "nextjs-toploader";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import PageLoader from "@/components/PageLoader";
+import { Suspense } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,6 +40,9 @@ export default async function LocaleLayout({ children, params }) {
         <NextIntlClientProvider locale={locale}>
           <MenuBar />
           <NextTopLoader color="#ffb900" />
+           <Suspense>
+            <PageLoader /> {/* ← add this */}
+          </Suspense>
           {children}
           <Footer />
         </NextIntlClientProvider>

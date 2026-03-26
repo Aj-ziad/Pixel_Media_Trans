@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-32 px-6 bg-muted relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent"></div>
+      <div className="absolute inset-0  bg-gradient-to-tr from-primary/5 to-transparent"></div>
       <div className="max-w-7xl mx-auto relative">
         <div className="text-center mb-20">
           <span className="text-[#ffb900] font-semibold text-lg tracking-wide uppercase mb-4 block">
@@ -29,9 +29,10 @@ const TestimonialsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
+           
             <Card
               key={index}
-              className="group hover:shadow-strong transition-all duration-500 hover:-translate-y-2 border-0 shadow-medium bg-card relative overflow-hidden animate-slide-up"
+              className="group hover:shadow-strong  bg-white  hover:-translate-y-2 border-0 shadow-md relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-accent opacity-10 rounded-full -translate-y-10 translate-x-10"></div>

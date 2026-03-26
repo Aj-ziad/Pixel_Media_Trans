@@ -51,40 +51,46 @@ function MobileNav() {
             </Link>
           ))}
 
-          {/* Language Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="flex items-center gap-2 py-2 px-4 rounded-lg text-black hover:bg-[#ffb900]">
-                <Languages /> {t('language')}
+          {/* Language Cards */}
+          <div className="pt-4 border-t border-gray-200/50">
+            <div className="text-xs uppercase text-gray-400 font-bold mb-3 px-2 tracking-wider">
+              {t('language')}
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                onClick={() => handleLocaleChange('en')}
+                className="flex flex-col items-center justify-center p-3 rounded-xl border border-gray-200 transition-colors bg-white hover:bg-orange-50 hover:border-orange-200 text-black shadow-sm"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <img src="/flags/en.png" alt="English" className="w-5 h-5 rounded-sm" />
+                  <span className="font-bold text-sm">English</span>
+                </div>
+                <span className="text-[10px] text-gray-500 font-semibold">EN</span>
               </button>
-            </DropdownMenuTrigger>
 
-            <DropdownMenuContent align="start" className="w-full bg-white/90">
-              <DropdownMenuItem
-                className="cursor-pointer flex items-center gap-2 py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
-                onSelect={() => handleLocaleChange('en')}
+              <button
+                onClick={() => handleLocaleChange('fr')}
+                className="flex flex-col items-center justify-center p-3 rounded-xl border border-gray-200 transition-colors bg-white hover:bg-orange-50 hover:border-orange-200 text-black shadow-sm"
               >
-                <img src="/flags/en.png" alt="English" className="w-5 h-5 rounded-sm" />
-                {t('english')}
-              </DropdownMenuItem>
+                <div className="flex items-center gap-2 mb-1">
+                  <img src="/flags/fr.png" alt="Français" className="w-5 h-5 rounded-sm" />
+                  <span className="font-bold text-sm">Français</span>
+                </div>
+                <span className="text-[10px] text-gray-500 font-semibold">FR</span>
+              </button>
 
-              <DropdownMenuItem
-                className="cursor-pointer flex items-center gap-2 py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
-                onSelect={() => handleLocaleChange('fr')}
+              <button
+                onClick={() => handleLocaleChange('ar')}
+                className="flex flex-col items-center justify-center p-3 rounded-xl border border-gray-200 transition-colors bg-white hover:bg-orange-50 hover:border-orange-200 text-black shadow-sm col-span-2 mt-1"
               >
-                <img src="/flags/fr.png" alt="Français" className="w-5 h-5 rounded-sm" />
-                {t('french')}
-              </DropdownMenuItem>
-
-              <DropdownMenuItem
-                className="cursor-pointer flex items-center gap-2 py-2 px-4 rounded-lg text-black data-[highlighted]:bg-[#ffb900]"
-                onSelect={() => handleLocaleChange('ar')}
-              >
-                <img src="/flags/ar.png" alt="العربية" className="w-5 h-5 rounded-sm" />
-                {t('arabic')}
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+                <div className="flex items-center gap-2 mb-1">
+                  <img src="/flags/ar.png" alt="العربية" className="w-5 h-5 rounded-sm" />
+                  <span className="font-bold text-sm">العربية</span>
+                </div>
+                <span className="text-[10px] text-gray-500 font-semibold">AR</span>
+              </button>
+            </div>
+          </div>
         </nav>
       </div>
     </>

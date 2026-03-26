@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
+import FAQSection from '@/components/FAQSection';
 
 const Contact = () => {
   const t = useTranslations('contact');
@@ -33,7 +34,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 font-sans m-10">
+    <>
+     <section className="max-w-6xl mx-auto px-4 py-16 font-sans m-10">
       {/* Header Section */}
       <div className="text-center mb-16">
         <h3 className="text-[#ffb900] font-bold tracking-wide text-sm m-2">
@@ -47,49 +49,84 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12">
+      <div className="grid md:grid-cols-2 gap-12 ">
         {/* Left Column - Contact Info */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-6">{t('connectTitle')}</h2>
-          <p className="text-gray-600 mb-8 text-sm font-medium">
+        <div >
+          <h2
+              className="text-5xl font-bold mb-8 tracking-tight text-gray-900"
+              style={{ fontFamily: "'Poppins', sans-serif" }}
+            >
+              {t('headingFirst')}{' '}
+              <span className="italic font-bold" style={{ color: '#ffb900' }}>
+                {t('headingSecond')}
+              </span>
+            </h2> 
+          <p className="text-gray-600 mb-8 text-lg font-medium">
             {t('connectDescription')}
           </p>
 
-          <div className="space-y-4 text-sm font-medium">
-            <div className="flex items-start gap-4">
-              <Mail className="mt-1 text-[#ffb900]" />
-              <div>
-                <h3 className="font-medium">{t('email.label')}</h3>
-                <a
-                  href="mailto:pixelmedia@gmail.com"
-                  className="text-gray-600 text-sm font-medium hover:text-[#ffb900]"
-                >
-                  {t('email.value')}
-                </a>
-              </div>
-            </div>
+         <div className="space-y-4 text-sm font-medium">
+  <div className="flex items-start gap-4  border  border-gray-200 p-2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-yellow-400">
+    <div
+      className="flex items-center justify-center shrink-0 mt-1"
+      style={{
+        background: "rgba(255,185,0,0.12)",
+        width: "40px",
+        height: "40px",
+        borderRadius: "50%",
+        border: "1.5px solid rgba(255,185,0,0.35)"
+      }}
+    >
+      <Mail className="text-[#ffb900]" size={18} />
+    </div>
+    <div>
+      <h3 className="font-medium">{t('email.label')}</h3>
+      <a href="mailto:pixelmedia@gmail.com" className="text-gray-600 text-sm font-medium hover:text-[#ffb900]">
+        {t('email.value')}
+      </a>
+    </div>
+  </div>
 
-            <div className="flex items-start gap-4">
-              <Phone className="mt-1 text-[#ffb900]" />
-              <div>
-                <h3 className="font-medium">{t('phone.label')}</h3>
-                <a
-                  href="https://wa.me/0669909179"
-                  className="text-gray-600 hover:text-[#ffb900]"
-                >
-                  {t('phone.value')}
-                </a>
-              </div>
-            </div>
+  <div className="flex items-start gap-4  border  border-gray-200 p-2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-yellow-400">
+    <div
+      className="flex items-center justify-center shrink-0 mt-1"
+      style={{
+        background: "rgba(255,185,0,0.12)",
+        width: "40px",
+        height: "40px",
+        borderRadius: "50%",
+        border: "1.5px solid rgba(255,185,0,0.35)"
+      }}
+    >
+      <Phone className="text-[#ffb900]" size={18} />
+    </div>
+    <div>
+      <h3 className="font-medium">{t('phone.label')}</h3>
+      <a href="https://wa.me/0669909179" className="text-gray-600 hover:text-[#ffb900]">
+        {t('phone.value')}
+      </a>
+    </div>
+  </div>
 
-            <div className="flex items-start gap-4">
-              <MapPin className="mt-1 text-[#ffb900]" />
-              <div>
-                <h3 className="font-medium">{t('location.label')}</h3>
-                <p className="text-gray-600">{t('location.value')}</p>
-              </div>
-            </div>
-          </div>
+  <div className="flex items-start gap-4 border border-gray-200 p-2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-yellow-400">
+    <div
+      className="flex items-center justify-center shrink-0 mt-1"
+      style={{
+        background: "rgba(255,185,0,0.12)",
+        width: "40px",
+        height: "40px",
+        borderRadius: "50%",
+        border: "1.5px solid rgba(255,185,0,0.35)"
+      }}
+    >
+      <MapPin className="text-[#ffb900]" size={18} />
+    </div>
+    <div>
+      <h3 className="font-medium">{t('location.label')}</h3>
+      <p className="text-gray-600">{t('location.value')}</p>
+    </div>
+  </div>
+</div>
 
           {/* Social Media */}
           <div className="mt-12 text-sm font-medium">
@@ -97,17 +134,13 @@ const Contact = () => {
            <div className="flex mt-4 sm:justify-center sm:mt-0">
             {/* Facebook */}
             <Link href="https://www.facebook.com/profile.php?id=61573457698720" className="text-gray-500 hover:text-[#ffb900] dark:hover:text-white">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M9.5 22.5h4v-9h3l1-4h-4v-2a2 2 0 0 1 2-2h2v-4h-4a4 4 0 0 0-4 4v4h-3v4h3z" strokeWidth="1"/></svg>
               <span className="sr-only">Facebook page</span>
             </Link>
 
             {/* Instagram */}
             <Link href="https://www.instagram.com/pixelmedia.ma/" className="text-gray-500 hover:text-[#ffb900] dark:hover:text-white ms-5">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"><path d="M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6zm14-2.9h.5"/><path d="M15.462 11.487a3.5 3.5 0 1 1-6.925 1.026a3.5 3.5 0 0 1 6.925-1.026"/></g></svg>
               <span className="sr-only">Instagram page</span>
             </Link>
 
@@ -133,7 +166,7 @@ const Contact = () => {
         </div>
 
         {/* Right Column - Contact Form */}
-        <div className="border border-gray-300 rounded-lg p-6 space-y-6">
+        <div className=" border-none shadow-md  bg-white rounded-lg p-6 space-y-6">
           <h2 className="text-2xl font-semibold mb-6">{t('form.title')}</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-2 gap-4">
@@ -207,6 +240,7 @@ const Contact = () => {
               disabled={isSubmitting}
               className="w-full bg-[#ffb900] text-sm font-medium hover:bg-[#f7b91c] text-white py-3 px-6 rounded-lg flex items-center justify-center gap-2"
             >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="#fffefe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"/></svg>
               {isSubmitting ? t('form.sending') : t('form.send')}
             </button>
           </form>
@@ -226,6 +260,13 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    <FAQSection/>
+
+    
+    </>
+   
+    
+
   );
 };
 

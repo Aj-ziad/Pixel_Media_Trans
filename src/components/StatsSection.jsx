@@ -1,6 +1,61 @@
 "use client";
 import { TrendingUp, Users, Star, Award } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const AnimatedCounter = ({ value }) => {
+  const [displayValue, setDisplayValue] = useState("0");
+  const ref = useRef(null);
+  
+  useEffect(() => {
+    if (!value) return;
+    const match = value.match(/([\d.,]+)(.*)/);
+    if (!match) {
+      setDisplayValue(value);
+      return;
+    }
+    
+    const numStr = match[1].replace(/,/g, '');
+    const suffix = match[2];
+    const targetNum = parseFloat(numStr);
+    
+    if (isNaN(targetNum)) {
+      setDisplayValue(value);
+      return;
+    }
+
+    const obj = { val: 0 };
+    gsap.to(obj, {
+      val: targetNum,
+      duration: 2.5,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 90%",
+        once: true,
+      },
+      onUpdate: () => {
+        const hasDecimals = numStr.includes('.');
+        let current = hasDecimals ? obj.val.toFixed(1) : Math.floor(obj.val);
+        // Add commas back if original had them
+        if (match[1].includes(',')) {
+           current = current.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        setDisplayValue(current + suffix);
+      }
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.trigger === ref.current && t.kill());
+    }
+  }, [value]);
+
+  return <span ref={ref}>{displayValue}</span>;
+}
 
 const StatsSection = () => {
   const t = useTranslations("StatsSection");
@@ -44,7 +99,7 @@ const StatsSection = () => {
               </div>
 
               <div className="text-2xl sm:text-3xl lg:text-5xl font-bold text-dark-foreground mb-1 group-hover:text-[#ffb900] transition-colors duration-300">
-                {stat.number}
+                <AnimatedCounter value={stat.number} />
               </div>
               <div className="text-sm sm:text-base lg:text-xl font-semibold text-[#ffb900] mb-1">
                 {stat.label}

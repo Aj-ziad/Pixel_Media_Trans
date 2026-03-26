@@ -72,7 +72,8 @@
       }
     ]
   },
-    "footer": {
+  "footer": {
+    "description": "Création d'expériences web esthétiques et fonctionnelles avec des technologies modernes. Nous aidons les startups et les entreprises à développer leur présence numérique.",
     "aboutTitle": "À propos de Pixel Media",
     "aboutLinks": {
       "aboutUs": "Qui sommes-nous",
@@ -80,35 +81,129 @@
       "services": "Services",
       "reviews": "Avis clients"
     },
+    "servicesTitle": "Nos Services",
+    "servicesLinks": {
+      "webDev": "Développement Web",
+      "webDesign": "Conception Web",
+      "marketing": "Marketing",
+      "googleAds": "Google Ads"
+    },
+    "helpfulLinksTitle": "Liens utiles",
+    "helpfulLinks": {
+      "faq": "FAQ",
+      "support": "Support",
+      "liveChat": "Chat en direct"
+    },
     "followTitle": "Suivez-nous",
     "termsTitle": "Conditions d’utilisation",
     "termsLinks": {
-      "privacy": "Politique de confidentialité",
+     
       "terms": "Conditions générales",
       "general": "Conditions générales d’utilisation"
     },
+    "contactTitle": "Contactez-nous",
     "copyright": "© 2023-2025 Pixel Media™. Tous droits réservés."
-
-
-},
-
-  "testimonials": {
-    "title": "Ce que disent nos clients",
-    "subtitle": "Nous sommes fiers de partager leurs avis",
-    "reviews": [
-      {
-        "name": "Jean Dupont",
-        "role": "Propriétaire d'entreprise",
-        "comment": "Pixel Media a transformé ma présence en ligne !"
-      },
-      {
-        "name": "Sarah Martin",
-        "role": "Responsable marketing",
-        "comment": "L'équipe est très professionnelle et respecte toujours les délais."
-      }
-    ]
   },
-  
+  "ctaBanner": {
+    "title": "Restons en contact.",
+    "subtitle": "Votre succès digital commence ici. Nous sommes là pour vous aider à atteindre vos objectifs en ligne.",
+    "btnDiscovery": "Réserver un appel découverte",
+    "btnSamples": "Voir nos réalisations"
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi choisir notre agence ?",
+    "subtitle": "Nous ne créons pas seulement des sites web — nous créons des expériences numériques qui font croître votre entreprise.",
+    "features": {
+      "design": {
+        "title": "Un design sur mesure exceptionnel",
+        "desc": "Des designs uniques et modernes conçus spécifiquement pour votre marque — sans templates, sans compromis."
+      },
+      "delivery": {
+        "title": "Livraison rapide et fiable",
+        "desc": "Du concept au lancement en un temps record, sans sacrifier la qualité ni la performance."
+      },
+      "mobile": {
+        "title": "Approche Mobile-First",
+        "desc": "Des sites web entièrement réactifs qui s'affichent et fonctionnent parfaitement sur tous les appareils et tailles d'écran."
+      },
+      "secure": {
+        "title": "Sécurisé et optimisé",
+        "desc": "Construit avec les meilleures pratiques : optimisé pour le SEO, ultra-rapide et protégé contre les menaces."
+      },
+      "convert": {
+        "title": "Conçu pour convertir",
+        "desc": "Des mises en page stratégiques et des appels à l'action clairs qui transforment les visiteurs en clients."
+      },
+      "support": {
+        "title": "Support dédié",
+        "desc": "Nous vous accompagnons à chaque étape — de la planification au lancement et au-delà."
+      }
+    }
+  },
+  "ourProjects": {
+    "title": "Nos <highlight>Projets</highlight>",
+    "subtitle": "Des résultats réels, des marques réelles. Chaque projet est une histoire de croissance que nous avons construite ensemble.",
+    "viewDetails": "Voir les détails",
+    "showMore": "Voir Plus",
+    "categories": {
+      "all": "Tous les travaux",
+      "social": "Réseaux Sociaux",
+      "branding": "Branding",
+      "webApp": "Web & App",
+      "marketingAds": "Marketing & Publicité"
+    },
+    "projects": {
+      "tiemMriem": {
+        "title": "Team Meriem — Farmasi Maroc",
+        "desc": "Conception complète de contenus et gestion des réseaux sociaux pour Team Meriem, une marque de marketing de réseau Farmasi. Nous avons créé une identité visuelle cohérente avec des publications engageantes pour les produits de soins et de beauté.",
+        "tag": "Réseaux Sociaux",
+        "result": "Identité Complète"
+      },
+      "sofra": {
+        "title": "Sofra — Restaurant Marocain",
+        "desc": "Publications réseaux sociaux et design photographique culinaire pour Sofra, un restaurant marocain traditionnel. Nous avons créé des visuels appétissants et une identité de marque chaleureuse qui capture l'essence de l'hospitalité marocaine.",
+        "tag": "Branding & Design",
+        "result": "9 Publications"
+      },
+      "mohammedElBouhli": {
+        "title": "Mohammed El Bouhli — Pro Therapy",
+        "desc": "De zéro à une identité de marque complète pour Pro Therapy de Mohammed El Bouhli, un cabinet de kinésithérapie et chiropractie. Nous avons conçu l'identité visuelle complète, le contenu réseaux sociaux et le montage vidéo.",
+        "tag": "Branding & Design",
+        "result": "62.2K Abonnés"
+      },
+      "livrone": {
+        "title": "LivrOne — Application de Livraison",
+        "desc": "Conception de contenus réseaux sociaux et promotionnels pour LivrOne, une application de livraison de nourriture. Nous avons créé des visuels vibrants et accrocheurs pour stimuler les téléchargements et l'engagement.",
+        "tag": "Réseaux Sociaux",
+        "result": "Campagne Complète"
+      },
+      "roaa": {
+        "title": "La Maison Roaa \u2014 Réservation",
+        "desc": "Conception et développement complet du site web pour La Maison Roaa, intégrant un système de réservation élégant, une présentation de menu et une interface attrayante qui reflète leur expérience culinaire haut de gamme.",
+        "tag": "Web & App",
+        "result": "Lancement Plateforme"
+      },
+      "mci": {
+        "title": "Mci Luxury \u2014 Location de Voitures",
+        "desc": "Une plateforme web premium créée pour la location de voitures Mci Luxury, offrant un processus de réservation fluide et une galerie de véhicules interactive pour améliorer l'expérience client haut de gamme.",
+        "tag": "Web & App",
+        "result": "Système de Réservation"
+      },
+      "palmerie": {
+        "title": "Palmerie Quad \u2014 Activités Touristiques",
+        "desc": "Conception d'un site web dynamique pour Palmerie Quad afin de mettre en valeur les activités touristiques en plein air. Nous avons intégré un design épuré pour attirer davantage de réservations.",
+        "tag": "Web & App",
+        "result": "+50% Réservations"
+      },
+      "itranweb": {
+        "title": "Itranweb \u2014 Marketing & Publicité",
+        "desc": "Stratégie marketing globale et campagne publicitaire payante pour Itranweb. Nous avons fourni du contenu créatif et des placements publicitaires stratégiques pour maximiser la portée de la marque et la génération de leads.",
+        "tag": "Marketing & Publicité",
+        "result": "Croissance Exponentielle"
+      }
+    }
+  },
+
   "testimonials": {
     "sectionTag": "Témoignages",
     "title": "Ce que disent nos clients",
@@ -150,10 +245,13 @@
   
   "contact": {
     "sectionTag": "Contactez-nous",
+    "headingFirst": "Contactez",
+    "headingSecond": "Nous",
+    "globeText": "Nous vous proposons la meilleure interface utilisateur possible.",
     "title": "Découvrez l'hospitalité de Pixel Media",
     "subtitle": "Discutons ensemble de la manière dont nous pouvons vous aider à atteindre vos objectifs numériques. Contactez-nous pour une consultation gratuite.",
     "connectTitle": "Restons Connectés",
-    "connectDescription": "Échangez avec nos spécialistes du digital pour explorer des stratégies sur mesure, concevoir des expériences uniques et discuter de solutions innovantes pour propulser votre marque.",
+    "connectDescription": "Prêt à démarrer votre prochain projet ? Nous serions ravis de vous entendre. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.",
     "email": { "label": "Email", "value": "pixelmedia.agence@gmail.com" },
     "phone": { "label": "Atelier", "value": "+212 (06)69 90 91 79" },
     "location": { "label": "Localisation", "value": "Maroc, Agadir" },

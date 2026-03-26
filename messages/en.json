@@ -72,38 +72,135 @@
   },
 
   "footer": {
-    "aboutTitle": "About Pixel Media",
+    "description": "Building beautiful and functional web experiences with modern technologies. We help startups and businesses create their digital presence.",
+    "aboutTitle": "About Us",
     "aboutLinks": {
-      "aboutUs": "About us",
+      "aboutUs": "Company History",
       "whatWeDo": "What we do",
       "services": "Services",
       "reviews": "Clients Reviews"
     },
+    "servicesTitle": "Our Services",
+    "servicesLinks": {
+      "webDev": "Web Development",
+      "webDesign": "Web Design",
+      "marketing": "Marketing",
+      "googleAds": "Google Ads"
+    },
+    "helpfulLinksTitle": "Helpful Links",
+    "helpfulLinks": {
+      "faq": "FAQs",
+      "support": "Support",
+      "liveChat": "Live Chat"
+    },
     "followTitle": "Follow us",
     "termsTitle": "Terms of use",
     "termsLinks": {
-      "privacy": "Privacy policy",
-      "terms": "Terms & Conditions",
+      
+      "terms": "All rights reserved.",
       "general": "General terms of use"
     },
-    "copyright": "© 2023-2025 Pixel Media™. All Rights Reserved."
-  
-},
-  "testimonials": {
-    "title": "What our clients say",
-    "subtitle": "We are proud to share their feedback",
-    "reviews": [
-      {
-        "name": "John Doe",
-        "role": "Business Owner",
-        "comment": "Pixel Media transformed my online presence!"
+    "contactTitle": "Contact Us",
+    "copyright": "© 2023-2025 Pixel Media™"
+  },
+  "ctaBanner": {
+    "title": "Let's Get In Touch.",
+    "subtitle": "Your digital success starts here. We're happy to help you achieve your online goals.",
+    "btnDiscovery": "Book a discovery call",
+    "btnSamples": "View Our Work"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Our Agency?",
+    "subtitle": "We don't just build websites — we build digital experiences that grow your business.",
+    "features": {
+      "design": {
+        "title": "Stunning Custom Design",
+        "desc": "Unique, modern designs crafted specifically for your brand — no templates, no compromises."
       },
-      {
-        "name": "Sarah Smith",
-        "role": "Marketing Manager",
-        "comment": "The team is very professional and delivers on time."
+      "delivery": {
+        "title": "Fast & Reliable Delivery",
+        "desc": "From concept to launch in record time, without sacrificing quality or performance."
+      },
+      "mobile": {
+        "title": "Mobile-First Approach",
+        "desc": "Fully responsive websites that look and work flawlessly on every device and screen size."
+      },
+      "secure": {
+        "title": "Secure & Optimized",
+        "desc": "Built with best practices: SEO-ready, lightning-fast, and protected against threats."
+      },
+      "convert": {
+        "title": "Designed to Convert",
+        "desc": "Strategic layouts and clear calls-to-action that turn visitors into customers."
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "desc": "We're with you every step of the way — from planning to post-launch and beyond."
       }
-    ]
+    }
+  },
+  "ourProjects": {
+    "title": "Our <highlight>Projects</highlight>",
+    "subtitle": "Real results, real brands. Every project is a story of growth we built together.",
+    "viewDetails": "View Details",
+    "showMore": "Show More",
+    "categories": {
+      "all": "All Work",
+      "social": "Social Media",
+      "branding": "Branding",
+      "webApp": "Web & App",
+      "marketingAds": "Marketing & Ads"
+    },
+    "projects": {
+      "tiemMriem": {
+        "title": "Team Meriem — Farmasi Maroc",
+        "desc": "Complete social media design and content creation for Team Meriem, a Farmasi network marketing brand. We crafted a cohesive visual identity with engaging posts for skincare and beauty products.",
+        "tag": "Social Media",
+        "result": "Full Brand Identity"
+      },
+      "sofra": {
+        "title": "Sofra — Moroccan Restaurant",
+        "desc": "Social media posts and food photography design for Sofra, a traditional Moroccan restaurant. We created mouth-watering visuals and a warm brand identity that captures the essence of Moroccan hospitality.",
+        "tag": "Branding & Design",
+        "result": "9 Post Series"
+      },
+      "mohammedElBouhli": {
+        "title": "Mohammed El Bouhli — Pro Therapy",
+        "desc": "From zero to full brand identity for Pro Therapy by Mohammed El Bouhli, a physiotherapy and chiropractic clinic. We designed the complete visual identity, social media content, and video editing.",
+        "tag": "Branding & Design",
+        "result": "62.2K Followers"
+      },
+      "livrone": {
+        "title": "LivrOne — Food Delivery App",
+        "desc": "Social media design and promotional content for LivrOne, a food delivery application. We created vibrant, eye-catching ad creatives and app promo content to drive downloads and engagement.",
+        "tag": "Social Media",
+        "result": "Full Campaign"
+      },
+      "roaa": {
+        "title": "La Maison Roaa \u2014 Restaurant Booking",
+        "desc": "Complete website design and development for La Maison Roaa, featuring an elegant reservation system, menu showcase, and engaging UI that reflects their high-end culinary experience.",
+        "tag": "Web & App",
+        "result": "Platform Launch"
+      },
+      "mci": {
+        "title": "Mci Luxury \u2014 Car Rental",
+        "desc": "A premium web platform created for Mci Luxury car rentals, offering a seamless booking process and interactive vehicle gallery to enhance their high-end client experience.",
+        "tag": "Web & App",
+        "result": "Booking System"
+      },
+      "palmerie": {
+        "title": "Palmerie Quad \u2014 Tourism Activities",
+        "desc": "Dynamic website design for Palmerie Quad to showcase quad biking and outdoor tourism activities. We integrated a sleek layout to attract more bookings and tourists.",
+        "tag": "Web & App",
+        "result": "+50% Bookings"
+      },
+      "itranweb": {
+        "title": "Itranweb \u2014 Marketing & Campaign",
+        "desc": "Comprehensive marketing strategy and paid ads campaign for Itranweb. We delivered creative content and strategic ad placements to maximize brand reach and lead generation.",
+        "tag": "Marketing & Ads",
+        "result": "Exponential Growth"
+      }
+    }
   },
   "testimonials": {
     "sectionTag": "Testimonials",
@@ -146,10 +243,13 @@
   
   "contact": {
     "sectionTag": "Get In Touch",
+    "headingFirst": "Contact",
+    "headingSecond": "Us",
+    "globeText": "We offer you the best user interface possible.",
     "title": "Experience Pixel Media Hospitality",
     "subtitle": "Let's discuss how we can help you achieve your digital goals. Get in touch for a free consultation.",
     "connectTitle": "Let's Connect",
-    "connectDescription": "Connect with our digital specialists to explore tailored strategies, design bespoke experiences, and discuss innovative solutions to elevate your brand in today’s competitive market.",
+    "connectDescription": "Ready to start your next project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
     "email": { "label": "Email", "value": "pixelmedia.agence@gmail.com" },
     "phone": { "label": "Workshop", "value": "+212 (06)69 90 91 79" },
     "location": { "label": "Location", "value": "Morocco, Agadir" },

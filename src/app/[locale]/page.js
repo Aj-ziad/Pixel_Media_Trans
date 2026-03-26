@@ -4,10 +4,15 @@ import ServicesList from '@/components/ServicesList'
 import StatsSection from '@/components/StatsSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { Poppins, Playfair_Display } from 'next/font/google'
 import { Link } from '@/i18n/navigation'
+import GlobeCanvas from '@/components/GlobeCanvas'
+import CTABanner from '@/components/CTABanner'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import OurProjects from '@/components/OurProjects'
+import ScrollReveal from '@/components/ScrollReveal'
+
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['600', '700', '800'] })
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['600'], style: ['italic'] })
@@ -18,35 +23,37 @@ export default async function page() {
     const t = await getTranslations('HomePage');
   return (
     <>
-    <div className="relative bg-gray-50 min-h-screen flex flex-col justify-start items-center text-center top-56 px-6  -mt-28 lg:pt-44">
+    <div className="relative  min-h-screen flex flex-col justify-start items-center text-center top-56 px-6  -mt-28 lg:pt-44">
       
       {/* Heading */}
-<h1 className={`${poppins.className} text-5xl md:text-7xl font-extrabold max-w-4xl leading-tight mb-4`}>
-  {t.rich('mainHeading', {
-    highlight: (chunk) => (
-      <span className={`${playfair.className} italic text-[#ffb900]`}>
-        {chunk}
-      </span>
-    )
-  })}
-</h1>
+      <ScrollReveal animation="fadeUp" stagger>
+        <h1 className={`${poppins.className} text-5xl md:text-7xl font-extrabold max-w-4xl leading-tight mb-4`}>
+          {t.rich('mainHeading', {
+            highlight: (chunk) => (
+              <span className={`${playfair.className} italic text-[#ffb900]`}>
+                {chunk}
+              </span>
+            )
+          })}
+        </h1>
 
-<p className="text-gray-700 mt-6 text-lg md:text-xl max-w-2xl mb-8">
-  {t('subtext')}
-</p>
+        <p className="text-gray-700 mt-6 text-center mx-auto text-lg md:text-xl max-w-2xl mb-8">
+          {t('subtext')}
+        </p>
 
-<div className="flex flex-col md:flex-row gap-4 mb-16">
-  <Link href='/contact'>
-    <button className="px-6 py-3 rounded-lg bg-[#ffb900] text-white font-semibold shadow-md hover:bg-[#f7b91c] transition">
-      {t('btnConsult')}
-    </button>
-  </Link>
-  <Link href='/services'>
-    <button className="px-6 py-3 rounded-lg bg-black text-white font-semibold shadow-md hover:bg-gray-800 transition">
-      {t('btnServices')}
-    </button>
-  </Link>
-</div>
+        <div className="flex flex-col items-center justify-center md:flex-row gap-4 mb-16">
+          <Link href='/contact'>
+            <button className="px-6 py-3 rounded-lg bg-[#ffb900] text-white font-semibold shadow-md hover:bg-[#f7b91c] transition">
+              {t('btnConsult')}
+            </button>
+          </Link>
+          <Link href='/services'>
+            <button className="px-6 py-3 rounded-lg bg-black text-white font-semibold shadow-md hover:bg-gray-800 transition">
+              {t('btnServices')}
+            </button>
+          </Link>
+        </div>
+      </ScrollReveal>
 
       <div>
         <WhatsAppIcon/>
@@ -79,22 +86,59 @@ export default async function page() {
 
 
     </div>
-    <div className='mt-16'>
-      <StatsSection/>
-    </div>
-    <div className='relative bottom-15'>
-      <ServicesList services={services} />
-    </div>
-    <div>
-      <FAQSection/>
-    </div>
+
+    <ScrollReveal animation="scaleUp" stagger>
+      <div className='mt-16'>
+        <StatsSection/>
+      </div>
+    </ScrollReveal>
+      <ScrollReveal animation="fadeUp" stagger>
+      <div>
+        <OurProjects/>
+      </div>
+    </ScrollReveal>
+
+    <ScrollReveal animation="fadeUp" stagger>
+      <div className='relative bottom-15'>
+        <ServicesList services={services} />
+      </div>
+    </ScrollReveal>
+
+    <ScrollReveal animation="fadeIn">
+      <div>
+        <FAQSection/>
+      </div>
+    </ScrollReveal>
+
     <div>
       <Gallery/>
     </div>
-    
-    <div>
-      <TestimonialsSection/>
-    </div>
+
+    <ScrollReveal animation="fadeUp" stagger>
+      <div>
+        <TestimonialsSection/>
+      </div>
+    </ScrollReveal>
+
+    <ScrollReveal animation="fadeRight" stagger>
+      <div>
+        <WhyChooseUs/>
+      </div>
+    </ScrollReveal>
+
+  
+
+    <ScrollReveal animation="fadeLeft">
+      <div>
+        <GlobeCanvas/>
+      </div>
+    </ScrollReveal>
+
+    <ScrollReveal animation="scaleUp">
+      <div>
+        <CTABanner/>
+      </div>
+    </ScrollReveal>
     
     </>
   )
