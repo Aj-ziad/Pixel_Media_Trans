@@ -1,9 +1,8 @@
+/* Import migrated to layout.js to fix Turbopack caching / path resolution issues */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

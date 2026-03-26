@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./tw-animate.css";
 import MenuBar from "@/components/MenuBar";
 import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
