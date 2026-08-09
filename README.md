@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pixel Media
 
-## Getting Started
+A modern, multi-lingual portfolio and creative agency website built with Next.js, featuring dynamic animations and a sleek user interface.
 
-First, run the development server:
+![Pixel Media Screenshot](./public/screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Multi-lingual Support**: Fully localized in English, French, and Arabic using `next-intl`.
+- **Interactive Animations**: Advanced, smooth scroll animations powered by GSAP.
+- **Modern UI**: Styled with Tailwind CSS for a responsive, clean, and professional aesthetic.
+- **Dynamic 3D Elements**: Includes high-performance interactive 3D components like Cobe.
+- **Optimized Performance**: Taking advantage of Next.js App Router and Turbopack.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 💻 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/) (React 19)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [GSAP](https://gsap.com/)
+- **Internationalization (i18n)**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **3D Globe**: [Cobe](https://cobe.vercel.app/)
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+Follow these instructions to set up and run the project locally.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ensure you have Node.js and npm (or yarn/pnpm/bun) installed on your machine.
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository and navigate to the project folder:
+   ```bash
+   cd pixel_media_mainn
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📂 Project Structure
+
+- `/src/app/[locale]/` - Contains localized pages and routing.
+- `/src/components/` - Reusable React components (UI, layout, etc.).
+- `/src/constants/` - Static data and configuration files.
+- `/public/` - Static assets including images, icons, and fonts.

@@ -45,7 +45,17 @@ function MobileNav() {
               key={index}
               href={link.href}
               className="py-2 px-4 rounded-lg text-black hover:bg-[#ffb900]"
-              onClick={toggleMenu}
+              onClick={(e) => {
+                if (pathname === '/' && link.href.includes('#')) {
+                  e.preventDefault();
+                  const targetId = link.href.split('#')[1];
+                  const element = document.getElementById(targetId);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }
+                toggleMenu();
+              }}
             >
               {t(link.key)}
             </Link>

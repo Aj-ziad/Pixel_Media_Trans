@@ -145,6 +145,14 @@
     "subtitle": "Des résultats réels, des marques réelles. Chaque projet est une histoire de croissance que nous avons construite ensemble.",
     "viewDetails": "Voir les détails",
     "showMore": "Voir Plus",
+    "details": {
+      "client": "Client",
+      "year": "Année",
+      "services": "Services",
+      "result": "Résultat",
+      "backToProjects": "Retour aux Projets",
+      "projectNotFound": "Projet Non Trouvé"
+    },
     "categories": {
       "all": "Tous les travaux",
       "social": "Réseaux Sociaux",
@@ -200,6 +208,12 @@
         "desc": "Stratégie marketing globale et campagne publicitaire payante pour Itranweb. Nous avons fourni du contenu créatif et des placements publicitaires stratégiques pour maximiser la portée de la marque et la génération de leads.",
         "tag": "Marketing & Publicité",
         "result": "Croissance Exponentielle"
+      },
+      "freshlik": {
+        "title": "Freshlik \u2014 Produits Naturels",
+        "desc": "Identité visuelle complète et conception de marque pour Freshlik, mettant en valeur les produits naturels et frais. Nous avons créé une esthétique vibrante qui résonne auprès des consommateurs soucieux de leur santé.",
+        "tag": "Branding & Design",
+        "result": "Lancement d'Identité"
       }
     }
   },

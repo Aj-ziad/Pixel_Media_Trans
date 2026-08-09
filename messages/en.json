@@ -144,6 +144,14 @@
     "subtitle": "Real results, real brands. Every project is a story of growth we built together.",
     "viewDetails": "View Details",
     "showMore": "Show More",
+    "details": {
+      "client": "Client",
+      "year": "Year",
+      "services": "Services",
+      "result": "Result",
+      "backToProjects": "Back to Projects",
+      "projectNotFound": "Project Not Found"
+    },
     "categories": {
       "all": "All Work",
       "social": "Social Media",
@@ -199,6 +207,12 @@
         "desc": "Comprehensive marketing strategy and paid ads campaign for Itranweb. We delivered creative content and strategic ad placements to maximize brand reach and lead generation.",
         "tag": "Marketing & Ads",
         "result": "Exponential Growth"
+      },
+      "freshlik": {
+        "title": "Freshlik \u2014 Natural Products",
+        "desc": "Complete visual identity and brand design for Freshlik, highlighting natural and fresh products. We created a vibrant aesthetic that resonates with health-conscious consumers.",
+        "tag": "Branding & Design",
+        "result": "Full Identity Launch"
       }
     }
   },

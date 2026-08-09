@@ -32,6 +32,16 @@ const MenuBar = () => {
               <Link
                 key={index}
                 href={link.href}
+                onClick={(e) => {
+                  if (pathname === '/' && link.href.includes('#')) {
+                    e.preventDefault();
+                    const targetId = link.href.split('#')[1];
+                    const element = document.getElementById(targetId);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }
+                }}
                 className={`relative text-sm font-semibold transition-colors duration-300 
                   ${isActive ? 'text-[#ffb900]' : 'text-gray-700 hover:text-black'}`}
               >

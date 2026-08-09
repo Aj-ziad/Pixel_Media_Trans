@@ -57,12 +57,14 @@ function ProjectCard({ project, index }) {
   const [ref, visible] = useScrollReveal(0.08);
   const [hovered, setHovered]   = useState(false);
   const [imgError, setImgError] = useState(false);
-  const isLarge = project.size === "large";
+  const sizeClass = project.size === "tall" ? "op-size-tall" : "op-size-medium";
+  const itemOrder = project.id === 9 ? 5 : project.id === 5 ? 9 : undefined;
 
   return (
     <Link
       href={`/projects/${project.id}`}
-      style={{ textDecoration: 'none', display: 'block', gridColumn: isLarge ? "span 2" : "span 1", gridRow: isLarge ? "span 2" : "span 1" }}
+      className={sizeClass}
+      style={{ textDecoration: 'none', display: 'block', order: itemOrder }}
     >
       <div
         ref={ref}
@@ -75,7 +77,7 @@ function ProjectCard({ project, index }) {
           cursor: "pointer",
           backgroundColor: "#111",
           border: "1px solid rgba(255,255,255,0.06)",
-          minHeight: isLarge ? "540px" : "280px",
+          minHeight: project.size === "tall" ? "540px" : "280px",
           height: "100%",
           // ── scroll-in animation ──
           opacity:   visible ? 1 : 0,
@@ -101,11 +103,13 @@ function ProjectCard({ project, index }) {
         ) : (
           <Image
             src={project.image}
-            alt={project.title}
+            alt={t(project.titleKey) || "Project Image"}
             fill
             sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
             style={{ objectFit: "cover" }}
             onError={() => setImgError(true)}
+            priority={index < 4}
+            quality={85}
           />
         )}
       </div>
@@ -162,7 +166,7 @@ function ProjectCard({ project, index }) {
         top: hovered ? "auto" : "auto",
         right: "22px",
         bottom: "20px",
-        fontSize: isLarge ? "7rem" : "5rem",
+        fontSize: project.size === "tall" ? "7rem" : "5rem",
         fontWeight: 800,
         color: "rgba(255,185,0,0.06)",
         fontFamily: "'Syne', sans-serif",
@@ -206,7 +210,7 @@ function ProjectCard({ project, index }) {
 
         {/* Title */}
         <h3 style={{
-          fontSize: isLarge ? "1.65rem" : "1.2rem",
+          fontSize: project.size === "tall" ? "1.65rem" : "1.2rem",
           fontWeight: 800,
           color: "#ffffff",
           margin: "0 0 10px",
@@ -382,16 +386,33 @@ export default function OurProjects() {
           box-shadow: 0 20px 50px rgba(255,185,0,0.3) !important;
         }
 
-        @media (max-width: 768px) {
-          .op-grid { grid-template-columns: 1fr !important; }
-          .op-grid > div {
-            grid-column: span 1 !important;
-            grid-row:    span 1 !important;
-            min-height: 300px !important;
-          }
+        /* Desktop Grid */
+        .op-grid {
+          grid-template-columns: repeat(3, 1fr) !important;
+          grid-auto-flow: dense;
         }
+        .op-size-tall {
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+        .op-size-medium {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+
+        /* Tablet Grid */
         @media (min-width: 769px) and (max-width: 1100px) {
           .op-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+
+        /* Mobile Grid */
+        @media (max-width: 768px) {
+          .op-grid { grid-template-columns: 1fr !important; }
+          .op-size-tall, .op-size-medium {
+            grid-column: span 1 !important;
+            grid-row: span 1 !important;
+            min-height: 300px !important;
+          }
         }
       `}</style>
 

@@ -33,9 +33,9 @@ export default async function LocaleLayout({ children, params }) {
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <body 
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} antialiased overflow-x-hidden w-full`}
         suppressHydrationWarning={true}
       >
         <NextIntlClientProvider locale={locale}>

@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useTranslations } from "next-intl";
-
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
 const AboutUs = () => {
   const t = useTranslations("about");
 
@@ -81,6 +82,12 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
     </div>
   );
 };

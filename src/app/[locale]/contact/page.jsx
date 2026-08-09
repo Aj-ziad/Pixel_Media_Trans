@@ -240,7 +240,7 @@ const Contact = () => {
               disabled={isSubmitting}
               className="w-full bg-[#ffb900] text-sm font-medium hover:bg-[#f7b91c] text-white py-3 px-6 rounded-lg flex items-center justify-center gap-2"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="#fffefe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="#fffefe" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.4" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"/></svg>
               {isSubmitting ? t('form.sending') : t('form.send')}
             </button>
           </form>
